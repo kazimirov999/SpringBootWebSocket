@@ -1,10 +1,8 @@
-package hello.service;
+package example.service;
 
-import hello.pojo.Message;
+import example.pojo.Message;
 
-import java.io.IOException;
 import java.time.LocalDateTime;
-import java.util.Date;
 
 public interface MessageSaver {
 

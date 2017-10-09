@@ -1,15 +1,11 @@
-package hello;
+package example;
 
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpRequest;
 import org.springframework.http.server.ServerHttpRequest;
 import org.springframework.http.server.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.socket.WebSocketHandler;
 import org.springframework.web.socket.server.HandshakeInterceptor;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.xml.ws.handler.MessageContext;
 import java.util.Map;
 
 import static javax.xml.ws.handler.MessageContext.HTTP_REQUEST_HEADERS;

@@ -1,8 +1,8 @@
-package hello.controller;
+package example.controller;
 
-import hello.pojo.Greeting;
-import hello.pojo.Message;
-import hello.service.MessageSaver;
+import example.pojo.Greeting;
+import example.pojo.Message;
+import example.service.MessageSaver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.messaging.handler.annotation.MessageMapping;
@@ -19,9 +19,9 @@ import static javax.xml.ws.handler.MessageContext.HTTP_REQUEST_HEADERS;
 public class GreetingController {
 
     @Autowired
-    MessageSaver messageSaver;
+    private MessageSaver messageSaver;
 
-    @MessageMapping("/hello")
+    @MessageMapping("/example")
     @SendTo("/topic/greetings")
     public Greeting greeting(Message message, SimpMessageHeaderAccessor headerAccessor) throws Exception {
 

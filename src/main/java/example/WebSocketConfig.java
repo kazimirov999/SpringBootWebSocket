@@ -1,4 +1,4 @@
-package hello;
+package example;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,9 +11,8 @@ import org.springframework.web.socket.server.HandshakeInterceptor;
 @EnableWebSocketMessageBroker
 public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 
-
     @Autowired
-    HandshakeInterceptor handlerInterceptor;
+    private HandshakeInterceptor handlerInterceptor;
 
 
     @Override
@@ -22,7 +21,6 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
         registry.setApplicationDestinationPrefixes("/app");
         super.configureMessageBroker(registry);
     }
-
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry stompEndpointRegistry) {

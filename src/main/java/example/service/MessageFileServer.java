@@ -1,6 +1,6 @@
-package hello.service;
+package example.service;
 
-import hello.pojo.Message;
+import example.pojo.Message;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 

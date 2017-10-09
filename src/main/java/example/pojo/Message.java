@@ -1,4 +1,4 @@
-package hello.pojo;
+package example.pojo;
 
 public class Message {
 
